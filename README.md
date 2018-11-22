@@ -1,10 +1,10 @@
-# TagoWill/Redis:5.0.0
+# TagoWill/Redis:5.0.2
 
 
 
 `Dockerfile` to create a light weight [Docker](https://www.docker.com/) container image for [Redis](http://redis.io/) using Alpine Linux.
 
-**Redis** is an open source, BSD licensed, advanced key-value cache and store. It is often referred to as a data structure server since keys can contain strings, hashes, lists, sets, sorted sets, bitmaps and hyperloglogs. [[Source](https://en.wikipedia.org/wiki/Redis)]
+**Redis** is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster. [[Source](https://redis.io)]
 
 **Alpine Linux** is a [Linux distribution](https://en.wikipedia.org/wiki/Linux_distribution) based on [musl](https://en.wikipedia.org/wiki/Musl) and [BusyBox](https://en.wikipedia.org/wiki/BusyBox), primarily designed for "[power users](https://en.wikipedia.org/wiki/Power_user) who appreciate security, simplicity and resource efficiency". [[Source](https://en.wikipedia.org/wiki/Alpine_Linux)]
 
@@ -18,7 +18,7 @@ Current versions used:
 
 |     Alpine Linux     | Redis |
 | :------------------: | :---: |
-| library-3.8 (x86_64) | 5.0.0 |
+| library-3.8 (x86_64) | 5.0.2 |
 
 
 
@@ -39,7 +39,7 @@ Steps needed to build an image and/or run a container.
 Before running any container or docker-compose we need to build an image
 
 ```bash
-docker build -t tagowill/redis:latest -t tagowill/redis:11.0 .
+docker build -t tagowill/redis:latest -t tagowill/redis:5.0.2 .
 ```
 
 
